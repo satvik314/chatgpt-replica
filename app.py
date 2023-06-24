@@ -9,7 +9,7 @@ import os
 # from dotenv import load_dotenv
 # load_dotenv()
 
-st.secrets["OPENAI_API_KEY"] = os.environ["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Initialize session state variables
 if 'responses' not in st.session_state:
